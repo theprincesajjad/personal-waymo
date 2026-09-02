@@ -24,7 +24,6 @@
   </header>
 
   <main id="top">
-    <!-- Fold: cream pitch · void membership slab -->
     <section class="fold">
       <div class="shell fold-grid">
         <div class="fold-copy">
@@ -39,23 +38,27 @@
           <p class="legal">Coming to the GTA. Not live yet.<br>Not affiliated with Waymo, Uber, or Lyft.</p>
         </div>
         <figure class="fold-slab">
-          <img src="graphics/v2/hero-fold.png" alt="Membership object on void — named driver, ads-on, drivers keep ~65%" width="960" height="720" decoding="async">
+          <img src="graphics/v2/hero-fold.png" alt="Cream membership card object on void" width="960" height="720" decoding="async">
         </figure>
       </div>
     </section>
 
-    <!-- Problem theater full-bleed -->
+    <!-- Void theater: HTML owns type; object mark only -->
     <section class="interlude" id="problem" aria-label="The night before the meeting">
-      <img class="interlude-art" src="graphics/v2/problem-theater.png" alt="" width="1600" height="900" decoding="async">
-      <div class="interlude-caption shell">
-        <p class="eyebrow ember">The night before the meeting</p>
-        <p class="interlude-lede">You have Linear. You have ChatGPT.<br>You do not have a car that knows your curb.</p>
-        <p class="interlude-body">Uber sold the craze. Then it sold you roulette — pooled, surging, disposable. Fine for a tourist. Wrong for the dinner you cannot afford to look cheap at.</p>
-        <p class="interlude-punch"><strong>Cancel the surge theater.</strong> Keep the hunger. Upgrade the product.</p>
+      <div class="shell interlude-inner">
+        <div class="void-mark" aria-hidden="true">
+          <span class="ember-rule"></span>
+          <img src="graphics/v2/problem-theater.png" alt="" width="1200" height="675" decoding="async">
+        </div>
+        <div class="interlude-caption">
+          <p class="eyebrow ember">The night before the meeting</p>
+          <p class="interlude-lede">You have Linear. You have ChatGPT.<br>You do not have a car that knows your curb.</p>
+          <p class="interlude-body">Uber sold the craze. Then it sold you roulette — pooled, surging, disposable. Fine for a tourist. Wrong for the dinner you cannot afford to look cheap at.</p>
+          <p class="interlude-punch"><strong>Cancel the surge theater.</strong> Keep the hunger. Upgrade the product.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Three manifesto stills — editorial, not equal beats -->
     <section class="stills" id="join" aria-labelledby="join-label">
       <div class="shell stills-intro">
         <p class="eyebrow" id="join-label">What you join</p>
@@ -64,34 +67,39 @@
       </div>
 
       <article class="still">
-        <figure><img src="graphics/v2/manifesto-status.png" alt="" width="1200" height="800" loading="lazy"></figure>
-        <div class="still-copy shell">
-          <p class="still-n">01 · Status</p>
-          <h3>A retainer, not a hunt</h3>
-          <p>Membership energy. Continuity. A named driver or a small pool when supply allows. The seat stays on. Defend it at dinner.</p>
+        <div class="shell still-grid">
+          <figure class="still-obj"><img src="graphics/v2/manifesto-status.png" alt="" width="1200" height="800" loading="lazy"></figure>
+          <div class="still-copy">
+            <p class="still-n">01 · Status</p>
+            <h3>A retainer, not a hunt</h3>
+            <p>Membership energy. Continuity. A named driver or a small pool when supply allows. The seat stays on. Defend it at dinner.</p>
+          </div>
         </div>
       </article>
 
       <article class="still still-void">
-        <figure><img src="graphics/v2/manifesto-relief.png" alt="" width="1200" height="800" loading="lazy"></figure>
-        <div class="still-copy shell">
-          <p class="still-n">02 · Relief</p>
-          <h3>Hired people, clear split</h3>
-          <p>Drivers on booked hours. About <strong>65%</strong> of the fare to them. About <strong>35%</strong> to the platform, plus ad inventory. The car stops being a lottery.</p>
+        <div class="shell still-grid still-grid-flip">
+          <figure class="still-obj"><img src="graphics/v2/manifesto-relief.png" alt="" width="1200" height="800" loading="lazy"></figure>
+          <div class="still-copy">
+            <p class="still-n">02 · Relief</p>
+            <h3>Hired people, clear split</h3>
+            <p>Drivers on booked hours. About <strong>65%</strong> of the fare to them. About <strong>35%</strong> to the platform, plus ad inventory. The car stops being a lottery.</p>
+          </div>
         </div>
       </article>
 
       <article class="still">
-        <figure><img src="graphics/v2/manifesto-ads.png" alt="" width="1200" height="800" loading="lazy"></figure>
-        <div class="still-copy shell">
-          <p class="still-n">03 · Fair price</p>
-          <h3>Cheaper when ads are on</h3>
-          <p>Prime-with-ads for the curb. Same car. Ads on = lower fare. Ads off = full fare. We sell relief — not “look how many ads we have.”</p>
+        <div class="shell still-grid">
+          <figure class="still-obj"><img src="graphics/v2/manifesto-ads.png" alt="" width="1200" height="800" loading="lazy"></figure>
+          <div class="still-copy">
+            <p class="still-n">03 · Fair price</p>
+            <h3>Cheaper when ads are on</h3>
+            <p>Prime-with-ads for the curb. Same car. Ads on = lower fare. Ads off = full fare. We sell relief — not “look how many ads we have.”</p>
+          </div>
         </div>
       </article>
     </section>
 
-    <!-- Membership visual — kill HTML table as hero -->
     <section class="tiers" id="membership" aria-labelledby="mem-label">
       <div class="shell tiers-head">
         <p class="eyebrow" id="mem-label">Membership</p>
@@ -99,20 +107,25 @@
         <p class="body">Exact dollars after interviews + a dated unlock from Sajjad. The visual is the system — not a spreadsheet.</p>
       </div>
       <figure class="tiers-art shell">
-        <img src="graphics/v2/tiers-system.png" alt="Light, Standard, Heavy membership system — Standard elevated" width="1200" height="800" loading="lazy">
+        <img src="graphics/v2/tiers-system.png" alt="Light, Standard, Heavy membership objects — Standard elevated" width="1200" height="800" loading="lazy">
       </figure>
       <p class="footnote shell" role="note">Estimates for planning only. We will not charge you from this page. Final prices unlock after interviews. Light ~$49–79 · Standard ~$99–149 · Heavy ~$249–399 + top-ups (CAD / mo, ESTIMATE). Rides separate: ads-on subsidized · ads-off full · platform ~35% · driver ~65%.</p>
     </section>
 
-    <!-- Economics theater -->
     <section class="econ" id="economics" aria-label="Economics">
-      <figure class="econ-art">
-        <img src="graphics/v2/economics-theater.png" alt="Drivers keep about 65 percent of the fare. Platform about 35 percent plus ads." width="1600" height="900" loading="lazy">
-      </figure>
-      <p class="econ-note shell">The old 80% line is dead. No invented $/week.</p>
+      <div class="shell econ-grid">
+        <div class="econ-type">
+          <p class="eyebrow ember">Split</p>
+          <p class="econ-figures"><span>~65%</span><span class="econ-sep">·</span><span>~35%</span></p>
+          <p class="econ-labels">Driver keep · Platform <span class="mute-plus">+ ads inventory</span></p>
+          <p class="econ-note">The old 80% line is dead. No invented $/week.</p>
+        </div>
+        <figure class="econ-art">
+          <img src="graphics/v2/economics-theater.png" alt="" width="1600" height="900" loading="lazy">
+        </figure>
+      </div>
     </section>
 
-    <!-- Waitlist -->
     <section class="waitlist" id="waitlist" aria-labelledby="wait-label">
       <div class="shell narrow">
         <p class="eyebrow" id="wait-label">Waitlist</p>
