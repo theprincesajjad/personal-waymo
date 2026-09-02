@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="64" viewBox="0 0 420 64" role="img" aria-label="Personal Waymo">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="64" viewBox="0 0 400 64" role="img" aria-label="Personal Waymo">
   <text x="0" y="44" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="40" fill="#1A1612" letter-spacing="-0.8">Personal</text>
-  <line x1="178" y1="38" x2="190" y2="38" stroke="#C4B49A" stroke-width="1.5"/>
-  <text x="198" y="44" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="22" fill="#1A1612" letter-spacing="1.5">WAYMO</text>
+  <line x1="176" y1="36" x2="186" y2="36" stroke="#C4B49A" stroke-width="1.5"/>
+  <text x="194" y="42" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="22" fill="#1A1612" letter-spacing="1.2">WAYMO</text>
 </svg>

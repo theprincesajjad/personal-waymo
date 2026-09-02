@@ -168,7 +168,12 @@ a { color: inherit; text-decoration: none; }
 .interlude-punch { color: var(--cream); }
 
 .stills { padding: clamp(5rem, 12vw, 8.5rem) 0 0; }
-.stills-intro { margin-bottom: clamp(3rem, 8vw, 5rem); max-width: 18ch; }
+.stills-intro { margin-bottom: clamp(3rem, 8vw, 5rem); max-width: 14rem; }
+.stills-intro .display {
+  font-size: clamp(2.35rem, 5vw, 3.65rem);
+  max-width: 12ch;
+  line-height: 1.05;
+}
 .close-line {
   margin: 0;
   font-family: var(--display-stack);
@@ -226,7 +231,7 @@ a { color: inherit; text-decoration: none; }
 .tiers-head .display { max-width: 18ch; margin-bottom: 0.75rem; }
 .tiers-lede {
   margin: 0 0 0.35rem;
-  color: var(--ink-soft);
+  color: var(--ink);
   max-width: 42ch;
   font-size: 1.05rem;
 }
@@ -235,7 +240,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.82rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--mute);
+  color: var(--ink-soft);
 }
 .tiers-art { margin: 1.25rem auto 1rem; }
 .tiers-art img {
