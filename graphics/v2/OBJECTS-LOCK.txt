@@ -1,0 +1,6 @@
+ART-LOCK 2026-09-02 (founder) — OBJECTS ONLY
+cream #FBF7EB · ink #1A1612 · ember #F05100
+Allowed in PNGs: membership card · P monogram · void slabs · hairlines · ember marks · 35|65 geometry
+FORBIDDEN: photoreal cars/hands/rain/dinner · body copy · pitch lines · CTAs in art
+Web owns type via COPY-v2.md. Source html/v2d/. Backup v2-objects/.
+If any PNG here exceeds ~30KB or looks photographic — REJECT and restore from v2-objects/.
