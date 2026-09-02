@@ -2,7 +2,7 @@
   "use strict";
 
   var form = document.getElementById("waitlist-form");
-  var success = document.getElementById("waitlist-success");
+  var success = document.getElementById("form-success");
   var yearEl = document.getElementById("year");
   var STORAGE_KEY = "personal-waymo-waitlist";
 
@@ -30,7 +30,7 @@
     e.preventDefault();
 
     var email = document.getElementById("email");
-    var age = document.getElementById("ageConfirm");
+    var age = document.getElementById("age18");
     var emailError = document.getElementById("email-error");
     var ageError = document.getElementById("age-error");
     var emailField = email && email.closest(".field");
@@ -64,7 +64,7 @@
       city: (document.getElementById("city") || {}).value || "",
       membership: (document.getElementById("membership") || {}).value || "",
       role: (document.getElementById("role") || {}).value || "",
-      ageConfirm: true,
+      age18: true,
       marketing: !!(document.getElementById("marketing") || {}).checked,
       savedAt: new Date().toISOString(),
     };
