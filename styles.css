@@ -57,19 +57,19 @@ a { color: inherit; text-decoration: none; }
   display: flex; align-items: center; justify-content: space-between;
   min-height: 4.75rem;
 }
-.wordmark img { height: 2.15rem; width: auto; }
+.wordmark img { height: 2rem; width: auto; display: block; }
 .header-cta {
   font-size: 0.85rem; font-weight: 600; color: var(--ember);
   letter-spacing: 0.02em;
 }
 
 .fold {
-  padding: clamp(4rem, 12vw, 8.5rem) 0 clamp(4.5rem, 12vw, 9rem);
+  padding: clamp(3rem, 8vw, 6rem) 0 clamp(3.25rem, 8vw, 6.25rem);
 }
 .fold-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: clamp(2.5rem, 7vw, 5.5rem);
+  gap: clamp(1.75rem, 4.5vw, 3.5rem);
   align-items: center;
 }
 .fold-copy h1 {
@@ -119,27 +119,35 @@ a { color: inherit; text-decoration: none; }
 .interlude {
   background: var(--void);
   color: var(--cream);
-  padding: clamp(4rem, 10vw, 7.5rem) 0;
-  border-top: 1px solid rgba(251,247,235,0.06);
+  padding: clamp(2.75rem, 7vw, 5rem) 0;
+  border-top: 1px solid rgba(251,247,235,0.12);
 }
 .interlude-inner {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: clamp(2rem, 6vw, 4.5rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
 }
 .void-mark { position: relative; }
-.void-mark .ember-rule {
+.ember-rule {
   display: block;
-  width: 2.5rem;
-  height: 2px;
+  width: 2.75rem;
+  height: 3px;
   background: var(--ember);
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.85rem;
 }
 .void-mark img {
   width: 100%;
-  opacity: 0.92;
-  border: 1px solid rgba(251,247,235,0.08);
+  opacity: 1;
+  border: 1px solid rgba(196, 180, 154, 0.45);
+  background: #141210;
+  box-shadow: inset 0 0 0 1px rgba(251,247,235,0.04);
+}
+.interlude-caption {
+  padding-top: 0.25rem;
+}
+.interlude-body {
+  color: rgba(251,247,235,0.82) !important;
 }
 .interlude-lede {
   margin: 0 0 1.5rem;
@@ -157,19 +165,19 @@ a { color: inherit; text-decoration: none; }
 }
 .interlude-punch { color: var(--cream); }
 
-.stills { padding: clamp(4.5rem, 11vw, 8rem) 0 0; }
-.stills-intro { margin-bottom: clamp(3rem, 7vw, 5rem); max-width: 22ch; }
+.stills { padding: clamp(3rem, 7vw, 5.5rem) 0 0; }
+.stills-intro { margin-bottom: clamp(1.75rem, 4vw, 2.75rem); max-width: 22ch; }
 .close-line {
   margin: 0;
   font-family: var(--display-stack);
   font-size: clamp(1.45rem, 2.8vw, 2rem);
   letter-spacing: -0.02em;
 }
-.still { margin: 0 0 clamp(3.5rem, 9vw, 6.5rem); }
+.still { margin: 0 0 clamp(2rem, 5vw, 3.5rem); }
 .still-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: clamp(2rem, 5vw, 4rem);
+  gap: clamp(1.25rem, 3.5vw, 2.75rem);
   align-items: center;
 }
 .still-grid-flip .still-obj { order: 2; }
@@ -177,8 +185,10 @@ a { color: inherit; text-decoration: none; }
 .still-obj { margin: 0; }
 .still-obj img {
   width: 100%;
-  border: 1px solid var(--hairline);
+  border: 1px solid rgba(26, 22, 18, 0.18);
+  background: var(--cream-deep);
 }
+.still-void .still-obj .ember-rule { margin-bottom: 0.75rem; }
 .still-n {
   margin: 0 0 0.75rem;
   font-size: 0.68rem;
@@ -199,17 +209,33 @@ a { color: inherit; text-decoration: none; }
 .still-void {
   background: var(--void);
   color: var(--cream);
-  padding: clamp(3rem, 8vw, 5.5rem) 0;
+  padding: clamp(2.25rem, 5.5vw, 3.75rem) 0;
 }
-.still-void .still-obj img { border-color: rgba(251,247,235,0.1); }
-.still-void .still-copy p { color: rgba(251,247,235,0.7); }
+.still-void .still-obj img {
+  border-color: rgba(196, 180, 154, 0.4);
+  background: #141210;
+}
+.still-void .still-copy p { color: rgba(251,247,235,0.82); }
 .still-void h3 { color: var(--cream); }
 
 .tiers {
-  padding: clamp(4rem, 10vw, 7rem) 0 clamp(3.5rem, 8vw, 5.5rem);
+  padding: clamp(2.75rem, 7vw, 5rem) 0 clamp(2.75rem, 6vw, 4.5rem);
 }
-.tiers-head .display { max-width: 14ch; }
-.tiers-art { margin: 2.75rem auto; }
+.tiers-head .display { max-width: 18ch; margin-bottom: 0.75rem; }
+.tiers-lede {
+  margin: 0 0 0.35rem;
+  color: var(--ink-soft);
+  max-width: 42ch;
+  font-size: 1.05rem;
+}
+.tiers-names {
+  margin: 0 0 0.25rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mute);
+}
+.tiers-art { margin: 1.25rem auto 1rem; }
 .tiers-art img {
   width: 100%;
   border: 1px solid var(--hairline);
@@ -252,7 +278,8 @@ a { color: inherit; text-decoration: none; }
 .econ-art { margin: 0; }
 .econ-art img {
   width: 100%;
-  border: 1px solid rgba(251,247,235,0.08);
+  border: 1px solid rgba(196, 180, 154, 0.4);
+  background: #141210;
 }
 .econ-note {
   margin: 0;
