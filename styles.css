@@ -858,3 +858,41 @@ button.btn {
   .ads-grid { grid-template-columns: 1fr; }
   .btn-ghost { margin-left: 0; margin-top: 0.75rem; display: inline-flex; }
 }
+
+
+/* Designer graphics/v2 fold */
+.problem-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+.problem-visual img {
+  width: 100%;
+  border-radius: var(--radius-card, 14px);
+  border: 1px solid rgba(251,247,235,0.12);
+}
+.manifesto-art {
+  margin: 0 0 1rem;
+  grid-column: 1 / -1;
+}
+.manifesto-art img {
+  width: 100%;
+  max-width: 28rem;
+  border-radius: var(--radius-card, 14px);
+  border: 1px solid var(--hairline, rgba(26,22,18,0.12));
+}
+.econ-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+.econ-visual img {
+  width: 100%;
+  border-radius: var(--radius-card, 14px);
+  border: 1px solid rgba(251,247,235,0.12);
+}
+@media (max-width: 860px) {
+  .problem-grid, .econ-grid { grid-template-columns: 1fr; }
+}
