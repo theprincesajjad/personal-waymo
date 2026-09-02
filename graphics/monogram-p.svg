@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Personal">
+  <rect width="128" height="128" rx="28" fill="#FBF7EB"/>
+  <text x="64" y="84" text-anchor="middle" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="72" fill="#1A1612">P</text>
+  <circle cx="98" cy="30" r="8" fill="#F05100"/>
+</svg>

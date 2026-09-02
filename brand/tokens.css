@@ -1,0 +1,25 @@
+/* Personal Waymo — launch tokens
+   ICP-LOCK 2026-09-02. Cream manifesto + ember. No purple AI. */
+
+:root {
+  --cream: #FBF7EB;
+  --cream-deep: #F3EBD8;
+  --ink: #1A1612;
+  --ink-soft: #3D342C;
+  --mute: #7A6F63;
+  --void: #0E0C0A;
+  --ember: #F05100;
+  --ember-press: #C94200;
+  --ember-wash: rgba(240, 81, 0, 0.12);
+  --metal: #C4B49A; /* gold metal accent only — not wash */
+  --hairline: rgba(26, 22, 18, 0.12);
+  --ok: #2F6B4F;
+  --warn: #A15C12;
+
+  --display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --ui: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono: "SF Mono", ui-monospace, Menlo, monospace;
+
+  --radius: 10px;
+  --radius-card: 14px;
+}

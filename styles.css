@@ -1,18 +1,16 @@
 /* Personal Waymo — cream manifesto
-   Cream #FBF7EB · Ember #F05100 (primary CTA only) · warm near-black ink */
+   Designer tokens fold · ember CTA only · layout preserved */
+
+@import url("brand/tokens.css");
 
 :root {
-  --cream: #FBF7EB;
-  --cream-deep: #F3ECD8;
-  --ink: #1A1714;
-  --ink-soft: #3D3832;
-  --ink-muted: #6B645A;
-  --line: #E4DCC8;
-  --ember: #F05100;
-  --ember-hover: #D44700;
+  /* Site layout + aliases onto Designer tokens */
+  --ink-muted: var(--mute);
+  --line: var(--hairline);
+  --ember-hover: var(--ember-press);
   --white: #FFFEF9;
-  --serif: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  --sans: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: var(--display);
+  --sans: var(--ui);
   --max: 1080px;
   --narrow: 640px;
   --space: clamp(1.25rem, 3vw, 2rem);
@@ -32,7 +30,7 @@ body {
   margin: 0;
   background: var(--cream);
   color: var(--ink);
-  font-family: var(--sans);
+  font-family: var(--ui);
   font-size: 1.0625rem;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -41,6 +39,8 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 a {
@@ -69,7 +69,7 @@ a:hover {
   z-index: 20;
   background: color-mix(in srgb, var(--cream) 92%, transparent);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--hairline);
 }
 
 .header-inner {
@@ -81,12 +81,28 @@ a:hover {
 }
 
 .wordmark {
-  font-family: var(--serif);
-  font-size: 1.35rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: var(--ink);
+}
+
+.wordmark img {
+  height: 2.15rem;
+  width: auto;
+  max-width: min(240px, 55vw);
+}
+
+.wordmark-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .nav {
@@ -94,6 +110,7 @@ a:hover {
   align-items: center;
   gap: 1.25rem;
   font-size: 0.9rem;
+  font-family: var(--ui);
 }
 
 .nav a {
@@ -120,7 +137,44 @@ a:hover {
 /* Hero */
 .hero {
   padding: clamp(4rem, 12vw, 7.5rem) 0 clamp(3.5rem, 8vw, 5.5rem);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-visual {
+  margin: 0;
+  justify-self: end;
+  max-width: 360px;
+  width: 100%;
+}
+
+.hero-visual img {
+  width: 100%;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--hairline);
+  background: var(--cream-deep);
+}
+
+@media (max-width: 800px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    justify-self: start;
+    max-width: 280px;
+    order: -1;
+  }
 }
 
 .eyebrow {
@@ -129,12 +183,13 @@ a:hover {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--mute);
+  font-family: var(--ui);
 }
 
 .hero h1 {
   margin: 0 0 1.25rem;
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: clamp(2.75rem, 8vw, 5.25rem);
   font-weight: 600;
   line-height: 1.05;
@@ -151,7 +206,7 @@ a:hover {
 
 .support {
   margin: 0 0 2rem;
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: clamp(1.35rem, 3vw, 1.75rem);
   font-weight: 600;
   color: var(--ink);
@@ -168,7 +223,7 @@ a:hover {
   margin: 0;
   max-width: 36rem;
   font-size: 0.875rem;
-  color: var(--ink-muted);
+  color: var(--mute);
   line-height: 1.5;
 }
 
@@ -181,7 +236,7 @@ a:hover {
   padding: 0.7rem 1.35rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-family: var(--sans);
+  font-family: var(--ui);
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
@@ -196,19 +251,19 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background: var(--ember-hover);
-  border-color: var(--ember-hover);
+  background: var(--ember-press);
+  border-color: var(--ember-press);
   color: #fff;
 }
 
 .btn-ghost {
   background: transparent;
   color: var(--ink);
-  border-color: var(--line);
+  border-color: var(--hairline);
 }
 
 .btn-ghost:hover {
-  border-color: var(--ink-muted);
+  border-color: var(--mute);
   color: var(--ink);
 }
 
@@ -219,7 +274,7 @@ a:hover {
 /* Sections */
 .section {
   padding: clamp(3.25rem, 8vw, 5.5rem) 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--hairline);
 }
 
 .section-label {
@@ -228,12 +283,13 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--mute);
+  font-family: var(--ui);
 }
 
 .section-kicker {
   margin: 0 0 1.75rem;
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 600;
   line-height: 1.2;
@@ -268,13 +324,13 @@ a:hover {
 .beat {
   padding: 1.5rem;
   background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 0.75rem;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-card);
 }
 
 .beat h3 {
   margin: 0 0 0.65rem;
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.45rem;
   font-weight: 600;
 }
@@ -285,11 +341,33 @@ a:hover {
   font-size: 0.98rem;
 }
 
+.beat-ads {
+  position: relative;
+}
+
+.ads-on-badge {
+  width: auto;
+  height: 2.5rem;
+  margin: 0 0 0.85rem;
+}
+
 /* Membership table */
+.membership-visual {
+  margin: 0 0 1.5rem;
+  max-width: 280px;
+}
+
+.membership-visual img {
+  width: 100%;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--hairline);
+  background: var(--cream-deep);
+}
+
 .table-wrap {
   overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: 0.75rem;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-card);
   background: var(--white);
 }
 
@@ -297,6 +375,7 @@ a:hover {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
+  font-family: var(--ui);
 }
 
 .tiers th,
@@ -304,7 +383,7 @@ a:hover {
   padding: 1rem 1.1rem;
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--hairline);
 }
 
 .tiers th {
@@ -312,7 +391,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--mute);
   background: var(--cream-deep);
 }
 
@@ -321,7 +400,7 @@ a:hover {
 }
 
 .tiers em {
-  color: var(--ink-muted);
+  color: var(--mute);
   font-style: normal;
   font-size: 0.85em;
 }
@@ -341,7 +420,7 @@ a:hover {
 
   .tiers tr {
     padding: 1rem 0;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--hairline);
   }
 
   .tiers tr:last-child {
@@ -361,7 +440,7 @@ a:hover {
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--ink-muted);
+    color: var(--mute);
   }
 
   .tiers td[data-label="Tier"] {
@@ -373,8 +452,8 @@ a:hover {
   margin: 1.25rem 0 0;
   padding: 0.95rem 1.1rem;
   background: var(--cream-deep);
-  border-left: 3px solid var(--ink-muted);
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-left: 3px solid var(--mute);
+  border-radius: 0 var(--radius) var(--radius) 0;
   font-size: 0.9rem;
   color: var(--ink-soft);
 }
@@ -387,6 +466,7 @@ a:hover {
   margin: 0 0 0.75rem;
   font-size: 1rem;
   font-weight: 600;
+  font-family: var(--ui);
 }
 
 .ride-layer ul {
@@ -412,7 +492,7 @@ a:hover {
 
 .steps li::marker {
   font-weight: 600;
-  color: var(--ink-muted);
+  color: var(--mute);
 }
 
 /* FAQ */
@@ -422,11 +502,11 @@ a:hover {
 
 .faq-item {
   padding: 1.25rem 0;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid var(--hairline);
 }
 
 .faq-item:last-child {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--hairline);
 }
 
 .faq-item dt {
@@ -450,8 +530,8 @@ a:hover {
   gap: 1.1rem;
   padding: 1.75rem;
   background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 0.85rem;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-card);
 }
 
 .field {
@@ -463,6 +543,7 @@ a:hover {
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--ink-soft);
+  font-family: var(--ui);
 }
 
 .req {
@@ -474,7 +555,7 @@ a:hover {
 }
 
 .opt {
-  color: var(--ink-muted);
+  color: var(--mute);
   font-size: 0.78rem;
   font-weight: 400;
 }
@@ -485,16 +566,17 @@ a:hover {
   width: 100%;
   min-height: 2.75rem;
   padding: 0.55rem 0.85rem;
-  border: 1px solid var(--line);
-  border-radius: 0.45rem;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
   background: var(--cream);
   color: var(--ink);
   font: inherit;
+  font-family: var(--ui);
 }
 
 .field input:focus,
 .field select:focus {
-  outline: 2px solid color-mix(in srgb, var(--ember) 45%, transparent);
+  outline: 2px solid var(--ember-wash);
   outline-offset: 1px;
   border-color: var(--ember);
 }
@@ -526,7 +608,7 @@ a:hover {
 .form-note {
   margin: 0;
   font-size: 0.82rem;
-  color: var(--ink-muted);
+  color: var(--mute);
   line-height: 1.45;
 }
 
@@ -534,13 +616,13 @@ a:hover {
   padding: 1.75rem;
   margin-bottom: 1.25rem;
   background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 0.85rem;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-card);
 }
 
 .success-title {
   margin: 0 0 0.5rem;
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.75rem;
   font-weight: 600;
 }
@@ -559,12 +641,28 @@ a:hover {
   margin: 0 0 1rem;
   max-width: 48rem;
   font-size: 0.85rem;
-  color: var(--ink-muted);
+  color: var(--mute);
   line-height: 1.55;
 }
 
 .footer-meta {
   margin: 0;
   font-size: 0.8rem;
-  color: var(--ink-muted);
+  color: var(--mute);
 }
+
+
+/* Designer token aliases */
+:root {
+  --ink-muted: var(--mute, #7A6F63);
+  --line: var(--hairline, rgba(26, 22, 18, 0.12));
+  --ember-hover: var(--ember-press, #C94200);
+  --serif: var(--display);
+  --sans: var(--ui);
+}
+.wordmark img { display: block; height: 1.75rem; width: auto; }
+.hero-object { margin: 2.5rem 0 0; }
+.hero-object img { width: min(100%, 36rem); border-radius: var(--radius-card, 14px); display: block; }
+.inline-badge { height: 1.1rem; width: auto; vertical-align: -0.15em; margin-left: 0.35rem; }
+.membership-visual { margin: 0 0 1.5rem; }
+.membership-visual img { width: min(100%, 22rem); border-radius: var(--radius-card, 14px); display: block; }
