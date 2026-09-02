@@ -14,221 +14,119 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap header-inner">
+    <div class="shell header-row">
       <a class="wordmark" href="#top" aria-label="Personal Waymo">
-        <img src="graphics/wordmark-lockup.svg" alt="Personal Waymo" width="520" height="72" decoding="async">
+        <img src="graphics/wordmark-lockup.svg" alt="" width="520" height="72" decoding="async">
+        <span class="sr-only">Personal Waymo</span>
       </a>
-      <a class="header-join" href="#waitlist">Join the waitlist</a>
+      <a class="header-cta" href="#waitlist">Join the waitlist</a>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="section-eyebrow">GTA waitlist · membership first</p>
+    <!-- Fold: cream pitch · void membership slab -->
+    <section class="fold">
+      <div class="shell fold-grid">
+        <div class="fold-copy">
+          <p class="eyebrow">GTA waitlist · membership first</p>
           <h1>Not a ride.<br>A retainer.</h1>
-          <div class="hero-deck">
+          <div class="deck">
             <p>You already pay for tools that stay on.<br>The car is still a stranger with a surge meter.</p>
             <p>Personal Waymo is Uber’s hunger with a professional product: hired drivers, a name on the card, cheaper when our ads run.</p>
           </div>
-          <p class="fold-sub">Driven. Not shared.</p>
-          <div class="hero-cta-block">
-            <a class="btn btn-ember" href="#waitlist">Join the waitlist</a>
-            <a class="btn btn-ghost" href="#membership">See membership</a>
-            <p class="fine-print">Coming to the GTA. Not live yet.<br>Not affiliated with Waymo, Uber, or Lyft.</p>
-          </div>
+          <p class="line">Driven. Not shared.</p>
+          <a class="btn-ember" href="#waitlist">Join the waitlist</a>
+          <p class="legal">Coming to the GTA. Not live yet.<br>Not affiliated with Waymo, Uber, or Lyft.</p>
         </div>
-        <figure class="hero-object">
-          <img src="graphics/v2/hero-fold.png" alt="" width="640" height="640" decoding="async">
+        <figure class="fold-slab">
+          <img src="graphics/v2/hero-fold.png" alt="Membership object on void — named driver, ads-on, drivers keep ~65%" width="960" height="720" decoding="async">
         </figure>
       </div>
     </section>
 
-    <section class="problem" id="problem" aria-labelledby="problem-label">
-      <div class="wrap problem-grid">
-        <div class="problem-copy narrow-inner">
-        <p class="section-eyebrow" id="problem-label">The night before the meeting</p>
-        <p class="problem-lede">You have Linear. You have ChatGPT.<br>You do not have a car that knows your curb.</p>
-        <p class="problem-body">Uber sold the craze. Then it sold you roulette — pooled, surging, disposable. Fine for a tourist. Wrong for the dinner you cannot afford to look cheap at.</p>
-        <p class="problem-punch"><strong>Cancel the surge theater.</strong><br>Keep the hunger. Upgrade the product.</p>
-        </div>
-        <figure class="problem-visual">
-          <img src="graphics/v2/problem-theater.png" alt="" width="720" height="480" decoding="async">
-        </figure>
+    <!-- Problem theater full-bleed -->
+    <section class="interlude" id="problem" aria-label="The night before the meeting">
+      <img class="interlude-art" src="graphics/v2/problem-theater.png" alt="" width="1600" height="900" decoding="async">
+      <div class="interlude-caption shell">
+        <p class="eyebrow ember">The night before the meeting</p>
+        <p class="interlude-lede">You have Linear. You have ChatGPT.<br>You do not have a car that knows your curb.</p>
+        <p class="interlude-body">Uber sold the craze. Then it sold you roulette — pooled, surging, disposable. Fine for a tourist. Wrong for the dinner you cannot afford to look cheap at.</p>
+        <p class="interlude-punch"><strong>Cancel the surge theater.</strong> Keep the hunger. Upgrade the product.</p>
       </div>
     </section>
 
-    <section class="manifesto" id="product" aria-labelledby="manifesto-label">
-      <div class="wrap">
-        <p class="section-eyebrow" id="manifesto-label">What you join</p>
-        <p class="section-display">Three things. Not a feature dump.</p>
-        <div class="manifesto-lines">
-          <article class="manifesto-line">
-            <figure class="manifesto-art"><img src="graphics/v2/manifesto-status.png" alt="" width="480" height="320" loading="lazy"></figure>
-            <p class="manifesto-tag">01</p>
-            <h2>A retainer, not a hunt</h2>
-            <p>Membership energy. Continuity. A named driver or a small pool when supply allows. The seat stays on.</p>
-          </article>
-          <article class="manifesto-line">
-            <figure class="manifesto-art"><img src="graphics/v2/manifesto-ads.png" alt="" width="480" height="320" loading="lazy"></figure>
-            <p class="manifesto-tag">02</p>
-            <h2>Cheaper when ads are on</h2>
-            <p>Prime-with-ads for the curb. Same car. Ads on = lower fare. Ads off = full fare. We sell relief — not “look how many ads we have.”</p>
-          </article>
-          <article class="manifesto-line">
-            <figure class="manifesto-art"><img src="graphics/v2/manifesto-relief.png" alt="" width="480" height="320" loading="lazy"></figure>
-            <p class="manifesto-tag">03</p>
-            <h2>Hired people, clear split</h2>
-            <p>Drivers on booked hours. About <strong>65%</strong> of the fare to them. About <strong>35%</strong> to the platform, plus ad inventory. Not gig cosplay.</p>
-          </article>
-        </div>
-        <p class="section-kicker-close">Professional. Not pooled.</p>
+    <!-- Three manifesto stills — editorial, not equal beats -->
+    <section class="stills" id="join" aria-labelledby="join-label">
+      <div class="shell stills-intro">
+        <p class="eyebrow" id="join-label">What you join</p>
+        <h2 class="display">Three things.<br>Not a feature dump.</h2>
+        <p class="close-line">Professional. Not pooled.</p>
       </div>
+
+      <article class="still">
+        <figure><img src="graphics/v2/manifesto-status.png" alt="" width="1200" height="800" loading="lazy"></figure>
+        <div class="still-copy shell">
+          <p class="still-n">01 · Status</p>
+          <h3>A retainer, not a hunt</h3>
+          <p>Membership energy. Continuity. A named driver or a small pool when supply allows. The seat stays on. Defend it at dinner.</p>
+        </div>
+      </article>
+
+      <article class="still still-void">
+        <figure><img src="graphics/v2/manifesto-relief.png" alt="" width="1200" height="800" loading="lazy"></figure>
+        <div class="still-copy shell">
+          <p class="still-n">02 · Relief</p>
+          <h3>Hired people, clear split</h3>
+          <p>Drivers on booked hours. About <strong>65%</strong> of the fare to them. About <strong>35%</strong> to the platform, plus ad inventory. The car stops being a lottery.</p>
+        </div>
+      </article>
+
+      <article class="still">
+        <figure><img src="graphics/v2/manifesto-ads.png" alt="" width="1200" height="800" loading="lazy"></figure>
+        <div class="still-copy shell">
+          <p class="still-n">03 · Fair price</p>
+          <h3>Cheaper when ads are on</h3>
+          <p>Prime-with-ads for the curb. Same car. Ads on = lower fare. Ads off = full fare. We sell relief — not “look how many ads we have.”</p>
+        </div>
+      </article>
     </section>
 
-    <section class="membership" id="membership" aria-labelledby="membership-label">
-      <div class="wrap">
-        <p class="section-eyebrow" id="membership-label">Membership</p>
-        <p class="section-display">Structure · estimates only</p>
-        <p class="section-lede">Exact dollars after interviews + a dated unlock from Sajjad. Numbers below are <strong>ESTIMATES</strong> for waitlist education — not a checkout, not a promise.</p>
-
-        <figure class="membership-object">
-          <img src="graphics/v2/tiers-system.png" alt="Membership card — Light, Standard, Heavy structure" width="560" height="360" decoding="async">
-        </figure>
-
-        <div class="table-shell">
-          <table class="tiers">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">Light</th>
-                <th scope="col">Standard</th>
-                <th scope="col">Heavy</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">For</th>
-                <td>Occasional nights out</td>
-                <td>Weekly dinners / airports / meetings</td>
-                <td>The seat you leave on</td>
-              </tr>
-              <tr>
-                <th scope="row">Feel</th>
-                <td>In the club · ads-on default</td>
-                <td>Preferred name · ads-off available</td>
-                <td>Primary driver · retainer hours</td>
-              </tr>
-              <tr>
-                <th scope="row">Estimate</th>
-                <td><strong>~$49–79 / mo</strong> <em>(estimate)</em></td>
-                <td><strong>~$99–149 / mo</strong> <em>(estimate)</em></td>
-                <td><strong>~$249–399 / mo</strong> <em>(estimate)</em> + top-ups</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="disclaimer" role="note">Estimates for planning only. We will not charge you from this page. Final prices unlock after interviews.</p>
-
-        <div class="ride-layer">
-          <h3>Rides (separate from membership $)</h3>
-          <p>Ads-on subsidized · ads-off full · platform ~35% · driver ~65% · discount % TBD (do not invent).</p>
-        </div>
+    <!-- Membership visual — kill HTML table as hero -->
+    <section class="tiers" id="membership" aria-labelledby="mem-label">
+      <div class="shell tiers-head">
+        <p class="eyebrow" id="mem-label">Membership</p>
+        <h2 class="display">Structure · estimates only</h2>
+        <p class="body">Exact dollars after interviews + a dated unlock from Sajjad. The visual is the system — not a spreadsheet.</p>
       </div>
+      <figure class="tiers-art shell">
+        <img src="graphics/v2/tiers-system.png" alt="Light, Standard, Heavy membership system — Standard elevated" width="1200" height="800" loading="lazy">
+      </figure>
+      <p class="footnote shell" role="note">Estimates for planning only. We will not charge you from this page. Final prices unlock after interviews. Light ~$49–79 · Standard ~$99–149 · Heavy ~$249–399 + top-ups (CAD / mo, ESTIMATE). Rides separate: ads-on subsidized · ads-off full · platform ~35% · driver ~65%.</p>
     </section>
 
-    <section class="ads-panel" id="ads" aria-labelledby="ads-label">
-      <div class="wrap ads-grid">
-        <figure class="ads-object">
-          <img src="graphics/ads-on-badge.png" alt="Ads on" width="320" height="96" decoding="async">
-        </figure>
-        <div>
-          <p class="section-eyebrow" id="ads-label">Ads-on</p>
-          <p class="section-display">Relief, not carnival.</p>
-          <p class="section-lede">You’re the member. Ads underwrite a lower fare when you want them. Ads off costs more. Your call.</p>
-        </div>
-      </div>
+    <!-- Economics theater -->
+    <section class="econ" id="economics" aria-label="Economics">
+      <figure class="econ-art">
+        <img src="graphics/v2/economics-theater.png" alt="Drivers keep about 65 percent of the fare. Platform about 35 percent plus ads." width="1600" height="900" loading="lazy">
+      </figure>
+      <p class="econ-note shell">The old 80% line is dead. No invented $/week.</p>
     </section>
 
-    <section class="economics" id="economics" aria-labelledby="econ-label">
-      <div class="wrap econ-grid">
-        <figure class="econ-visual">
-          <img src="graphics/v2/economics-theater.png" alt="" width="720" height="400" loading="lazy">
-        </figure>
-        <div>
-        <p class="section-eyebrow" id="econ-label">Split</p>
-        <div class="split-block">
-          <div>
-            <p class="split-label">Drivers keep</p>
-            <p class="split-num">~65%</p>
-            <p class="split-note">of the fare</p>
-          </div>
-          <div>
-            <p class="split-label">Platform</p>
-            <p class="split-num">~35%</p>
-            <p class="split-note">plus ad inventory</p>
-          </div>
-        </div>
-        <p class="section-lede">The old 80% line is dead. No invented $/week.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="how" id="how" aria-labelledby="how-label">
-      <div class="wrap narrow">
-        <p class="section-eyebrow" id="how-label">Waitlist</p>
-        <p class="section-display">How the waitlist works</p>
-        <ol class="how-steps">
+    <!-- Waitlist -->
+    <section class="waitlist" id="waitlist" aria-labelledby="wait-label">
+      <div class="shell narrow">
+        <p class="eyebrow" id="wait-label">Waitlist</p>
+        <h2 class="display">How the waitlist works</h2>
+        <ol class="steps">
           <li>Leave your email. Pick Light / Standard / Heavy — or “not sure.”</li>
           <li>We confirm. Quietly.</li>
           <li>When counsel clears Toronto public PHV and supply is ready, the list goes first.</li>
         </ol>
-        <p class="section-lede">No “live citywide” theater before that. No fake launch countdown.</p>
-      </div>
-    </section>
+        <p class="body">No “live citywide” theater before that. No fake launch countdown.</p>
 
-    <section class="faq" id="faq" aria-labelledby="faq-label">
-      <div class="wrap narrow">
-        <p class="section-eyebrow" id="faq-label">FAQ</p>
-        <p class="section-display">Punch, still honest.</p>
-        <dl class="faq-list">
-          <div>
-            <dt>Are you Waymo, Uber, or Lyft?</dt>
-            <dd>No. Independent product name. Not affiliated. Period.</dd>
-          </div>
-          <div>
-            <dt>Are you running in Toronto?</dt>
-            <dd>Not as a public rideshare yet. Waitlist and packaging only until PHV counsel clears a live claim.</dd>
-          </div>
-          <div>
-            <dt>Ads-on — am I the product?</dt>
-            <dd>You’re the member. Ads underwrite a lower fare when you want them. Ads off costs more. Your call.</dd>
-          </div>
-          <div>
-            <dt>What do drivers take?</dt>
-            <dd>About <strong>65%</strong> of the fare. Platform about <strong>35%</strong>, plus ads. The old 80% line is dead.</dd>
-          </div>
-          <div>
-            <dt>Robotaxi?</dt>
-            <dd>Not day one. Human hired fleet first. AV is a later story — not this page’s hero.</dd>
-          </div>
-          <div>
-            <dt>Will you spam me?</dt>
-            <dd>Waitlist and opted-in only. CASL. We write when access is real.</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="waitlist" id="waitlist" aria-labelledby="wait-label">
-      <div class="wrap narrow">
-        <p class="section-eyebrow" id="wait-label">Join</p>
-        <p class="section-display">You’re early on purpose.</p>
-        <form id="waitlist-form" class="waitlist-form" novalidate>
+        <form id="waitlist-form" class="form" novalidate>
           <div class="field">
-            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <label for="email">Email</label>
             <input id="email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
@@ -257,29 +155,40 @@
               <option value="other">Other</option>
             </select>
           </div>
-          <label class="check">
-            <input type="checkbox" id="age18" name="age18" required>
-            <span>I confirm I am 18+</span>
-          </label>
-          <label class="check">
-            <input type="checkbox" id="marketing" name="marketing">
-            <span>Opt in to waitlist updates</span>
-          </label>
+          <label class="check"><input type="checkbox" id="age18" name="age18" required><span>I confirm I am 18+</span></label>
+          <label class="check"><input type="checkbox" id="marketing" name="marketing"><span>Opt in to waitlist updates</span></label>
           <p class="form-error" id="form-error" hidden></p>
-          <button type="submit" class="btn btn-ember btn-block">Join the waitlist</button>
+          <button type="submit" class="btn-ember btn-block">Join the waitlist</button>
         </form>
-        <div class="form-success" id="form-success" hidden>
+        <div class="success" id="form-success" hidden>
           <p class="success-title">You’re on the list.</p>
           <p>We’ll write when there’s real access — not a fake launch.</p>
         </div>
+
+        <details class="faq">
+          <summary>FAQ</summary>
+          <dl>
+            <dt>Are you Waymo, Uber, or Lyft?</dt>
+            <dd>No. Independent product name. Not affiliated. Period.</dd>
+            <dt>Are you running in Toronto?</dt>
+            <dd>Not as a public rideshare yet. Waitlist and packaging only until PHV counsel clears a live claim.</dd>
+            <dt>Ads-on — am I the product?</dt>
+            <dd>You’re the member. Ads underwrite a lower fare when you want them. Ads off costs more. Your call.</dd>
+            <dt>What do drivers take?</dt>
+            <dd>About <strong>65%</strong> of the fare. Platform about <strong>35%</strong>, plus ads. The old 80% line is dead.</dd>
+            <dt>Robotaxi?</dt>
+            <dd>Not day one. Human hired fleet first. AV is a later story — not this page’s hero.</dd>
+            <dt>Will you spam me?</dt>
+            <dd>Waitlist and opted-in only. CASL. We write when access is real.</dd>
+          </dl>
+        </details>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
+    <div class="shell">
       <p class="footer-refusals">Not affiliated with Waymo, Uber, or Lyft.<br>Not live. No hiring on this site. No equity sale.</p>
-      <p class="footer-meta">Personal Waymo · waitlist packaging</p>
     </div>
   </footer>
   <script src="script.js"></script>
